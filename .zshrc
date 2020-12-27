@@ -1,7 +1,11 @@
+# type zcalc in cli for quick maths
 autoload -Uz zcalc 
+
+# ignore lowercase entries when searching in cli
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# config prompt and include git repo name and branch
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
@@ -10,6 +14,7 @@ setopt prompt_subst
 PROMPT=\$vcs_info_msg_0_'%K{33}%F{0} %2~ %f%k%#'
 zstyle ':vcs_info:git:*' formats '%K{11}%F{0} %r %f%k%K{197}%F{15} %b %f%k'
 
+# use xterm color settings (ex. for folders)
 export CLICOLOR=1
 
 # Prompt notes:
