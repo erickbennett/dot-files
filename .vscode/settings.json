@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#ff0000",
+    "titleBar.inactiveBackground": "#9b0000"
+  },
+
+  "cSpell.words": ["log", "logs", "server"]
+}
