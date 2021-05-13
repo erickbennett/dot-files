@@ -1,0 +1,60 @@
+{
+  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Night Owl",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.tabSize": 2,
+  "todo-tree.tree.showScanModeButton": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.arrowParens": "avoid",
+  "prettier.singleQuote": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.wrapTabs": true,
+  "editor.tabCompletion": "onlySnippets",
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  "bracketPairColorizer.forceIterationColorCycle": true,
+
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    },
+    "[Night Owl (No Italics)]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  },
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
+}
