@@ -1,7 +1,12 @@
-# type zcalc in cli for quick maths
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}=${PATH}:${ANDROID_HOME}/platform-tools
+
+# type zcalc in the cli for a calculator
 autoload -Uz zcalc 
 
-# ignore lowercase entries when searching in cli
+# ignore lowercase entries when searching in the cli
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
@@ -11,10 +16,10 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 #PROMPT=\$vcs_info_msg_0_'%2~ %# '
-PROMPT=\$vcs_info_msg_0_'%K{33}%F{0} %2~ %f%k%#'
+PROMPT=\$vcs_info_msg_0_'%K{33}%F{0} %2~ %f%k%# '
 zstyle ':vcs_info:git:*' formats '%K{11}%F{0} %r %f%k%K{197}%F{15} %b %f%k'
 
-# use xterm color settings (ex. for folders)
+# use xterm color settings
 export CLICOLOR=1
 
 # Prompt notes:
