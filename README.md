@@ -1,2 +1,3 @@
 # dot-files
-setting files in one place
+
+all dev setting files in one place
